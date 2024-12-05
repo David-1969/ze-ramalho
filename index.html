@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes do Álbum</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header principal -->
+    <header class="header-bar">
+        Compact-Disc @
+    </header>
+
+    <!-- Navegação com a barra de navegação -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#">Perfil</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Página Inicial</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Pesquisa</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Categorias</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Populares</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Sair</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main com informações detalhadas do álbum -->
+    <main class="container mt-5">
+        <div class="row">
+            <!-- Imagem do álbum em formato maior -->
+            <div class="col-md-6">
+                <img id="albumImage" src="Zé_ramalho.jpg" alt="Imagem do Álbum" class="img-fluid">
+            </div>
+            <!-- Título e sinopse do álbum -->
+  <h2 id="albumTitle"> Zé Ramalho </h2>
+  <p id="albumDescription"> O álbum Zé Ramalho de 1978 é o disco de estreia do cantor e compositor paraibano, marcando sua entrada no cenário musical brasileiro com uma mistura única de rock, música regional nordestina e influências da música popular brasileira. A sonoridade do álbum mescla elementos de música folk e psicodelia com o cordel e o baião, criando uma sonoridade inovadora e cheia de experimentação. As letras, muitas vezes poéticas e repletas de imagens fortes, abordam temas como a identidade nordestina, o misticismo e a busca por liberdade. O álbum é repleto de composições que mais tarde se tornariam clássicos, como "Avôhai" e "Anunciação", que se destacam pela profundidade lírica e pela musicalidade marcante. Zé Ramalho é um dos primeiros discos a consolidar a imagem do cantor como um dos mais importantes representantes da música nordestina e popular brasileira. A produção do disco também foi um marco por sua abordagem ousada para a época, misturando sons tradicionais com o rock. </p>
+ <h2 id="albumTitle">Tracklist</h2>
+ <p id="albumDescription"> <strong>Lado 1:</strong> "Avôhai" -
+    "Cavalo de Pau" -
+    "Pavão Misterioso" -
+    "Avohai" -
+    "Táxi Lunar".
+    <p id="albumDescription"> <strong>Lado 2:</strong> "Anunciação" -
+        "Cavalo de Pau" -
+        "O Homem do Cão" -
+        "Abaixo o Céu, em Pé a Terra".</p>
+
+            <div class="col-md-6">
+                <!-- Resumo do álbum -->
+                <h2 id="albumTitle"></h2>
+                <p id="albumDescription"></p>
+
+                <div class="container mt-5">
+                    <h2>Avalie o Álbum</h2>
+            
+                    <!-- Sistema de avaliação de estrelas -->
+                    <div id="starRating" class="d-flex">
+                        <!-- Estrelas serão geradas dinamicamente com JavaScript -->
+                    </div>
+                    <div id="ratingMessage" class="mt-2"></div>
+            
+                    <h4 class="mt-4">Resenha:</h4>
+                    <textarea id="reviewText" class="form-control" rows="4"></textarea>
+                    <button id="submitReview" class="btn btn-primary mt-2">Enviar Resenha</button>
+            
+                    <h4 class="mt-4">Resenhas:</h4>
+                    <div id="reviewsList">
+                        <!-- Resenhas serão exibidas aqui -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
